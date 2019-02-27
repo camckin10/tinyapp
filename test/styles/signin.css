@@ -1,0 +1,58 @@
+
+
+.sign-up-block {
+  width:400px;
+  height:400px;
+  background-color: white;
+  border: #006600;
+  padding-left: 40px;
+  padding-right:40px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Roboto', helvetica, sans-serif;
+  margin-left:55px;
+}
+
+h1 {
+  color:black;
+  margin-left:85px;
+}
+
+legend {
+  padding:15px;
+  color:black;
+}
+
+button {
+  margin-top:30px;
+  background-color:#33cc33; 
+  font:25px sans-serif;
+  color:white;
+  
+}
+
+button:hover {
+  background-color:#006600;
+}
+
+
+input, button {
+  width:320px;
+  height:55px;
+  border:2px; 
+  padding:15px;
+  
+}
+
+.link {
+  color:blue;
+  margin-left:135px;
+}
+
+.log-in-link {
+  color:pink;
+  margin-left:135px;
+  font:18px sans-serif; 
+}
+
+
