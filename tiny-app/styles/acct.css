@@ -1,0 +1,37 @@
+/* body{
+	padding-left:10px;
+	margin-left: 10px;
+} */
+
+/*1st row of code*/
+
+/* .acct-nav{
+	border:2px solid orangered;
+
+} */
+
+.urls{
+	float:left;
+}
+
+.link{
+	float:right;
+}
+
+/*2nd row of code*/
+.url-box{
+	border:2px solid blue;
+	padding-top:15px;
+	padding-bottom:15px;
+	margin:10px;
+}
+
+.form-control{
+	border-radius:11px;
+	border: 2px solid orange;
+}
+
+.create-url{
+	margin-lefT:10px;
+	padding-top:10px;
+}
