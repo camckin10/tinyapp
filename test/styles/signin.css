@@ -1,58 +1,76 @@
+body{
+  background-color:lightgrey;
+}
 
+.intro-msg{
+  text-align: center;
+  padding-top:15px;
+  padding-bottom:13px;
+}
 
 .sign-up-block {
   width:400px;
-  height:400px;
-  background-color: white;
-  border: #006600;
+  height:484px;
+  background-color:white;
+  border:3px solid darkblue;
+  border-radius:10px;
   padding-left: 40px;
   padding-right:40px;
-  color: white;
+  color: black;
   font-size: 16px;
   font-family: 'Roboto', helvetica, sans-serif;
   margin-left:55px;
+  margin:auto;
 }
 
 h1 {
   color:black;
   margin-left:85px;
+  padding:17px;
 }
 
-legend {
-  padding:15px;
-  color:black;
+/* #email, #password{
+    
+} */
+
+input{
+  width: 60%;
+  height: 25px;
+  margin: 0 auto;
+  border: none; 
+  border:solid 1px darkblue;
+  border-radius: 10px;
+  padding-top:5px;
 }
 
 button {
   margin-top:30px;
-  background-color:#33cc33; 
+  background-color:#FF5151; 
   font:25px sans-serif;
   color:white;
   
 }
 
-button:hover {
+/* button:hover {
   background-color:#006600;
-}
+} */
 
 
 input, button {
-  width:320px;
+  width:312px;
   height:55px;
   border:2px; 
-  padding:15px;
+  padding:9px;
+  margin:10px;
+  border-radius:5px;
   
 }
 
 .link {
   color:blue;
   margin-left:135px;
+
 }
 
-.log-in-link {
-  color:pink;
-  margin-left:135px;
-  font:18px sans-serif; 
-}
 
 
