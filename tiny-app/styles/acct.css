@@ -1,33 +1,25 @@
 body{
 	background-color: #F5F5F5;
+	padding-top:56px;
 } 
 
+
 /*1st row of code*/
-
-/* .acct-nav{
-	border:2px solid orangered;
-
-} */
-
-.acct-nav{
-	padding-top:15px;
-}
-
-/*URLs class*/
-.navbar-brand{
-	font-size:44px;
-}
-.urls{
+.first-title{
 	float:left;
+	margin-left:57px;
+	padding-top:0px;
+	font-size:36px;
 }
 
-.link{
+.second-title{
 	float:right;
+	margin-right:57px;
 }
 
 /*2nd row of code*/
 .url-box{
-	border:2px solid blue;
+	border:1px solid #797979;
 	padding-top:15px;
 	background-color:white;
 	padding-bottom:15px;
@@ -45,4 +37,21 @@ body{
 	font-size:26px;
 	color:white;
 	border-radius:7px;
+}
+
+/*3rd row of code*/
+.url-table{
+	margin:46px;
+}
+
+table.table-bordered > thead > tr > th{
+  border:1px solid #797979 !important;
+}
+
+scope{
+	border:1px solid #797979 !important;
+}
+
+table.table-bordered > tbody > tr > td{
+	border:1px solid #797979 !important;
 }
