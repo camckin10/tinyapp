@@ -1,7 +1,6 @@
-/* body{
-	padding-left:10px;
-	margin-left: 10px;
-} */
+body{
+	background-color: #F5F5F5;
+} 
 
 /*1st row of code*/
 
@@ -30,8 +29,10 @@
 .url-box{
 	border:2px solid blue;
 	padding-top:15px;
+	background-color:white;
 	padding-bottom:15px;
-	margin:10px;
+	margin:46px;
+	border-radius:7px;
 }
 
 
