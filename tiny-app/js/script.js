@@ -24,11 +24,17 @@
 $('sign-btn').on("click", function(){
 	//user signs up
 //onclick function for this action?
+
 firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
-  var errorMessage = error.message;
-  // ...
+	var errorMessage = error.message;
+	if (errorCode == 'auth/invalid-email'){
+		alert('The email is incorrect')
+	} else {
+		alert(errorMessage)
+	}
+		console.log(error);
 });
 
 //user signs in app 
