@@ -16,29 +16,46 @@
 	firebase.initializeApp(config);
 	
 	//reference database
+	//read + write data from database 
 	var database = firebase.database();
 
-	//capture button click
-	//button will recognize click + increment the hit counts
+//onclick function for both sign in pages
+//user signs up, user can sign in, user can sign out
+$('sign-btn').on("click", function(){
+	//user signs up
+//onclick function for this action?
+firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
 
-	//option 1 
-	//create variable to hold numerical value of button
-	//var a = 1
-	//function incrementLink(){
-		//var hitCount = document.getElementById("hit-count");
-		//a++
-	//}
+//user signs in app 
+//onclick function for this action?
+firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
 
-	//option2
-	//function incrementValue(){
-// 		var linkValue = parseInt(document.getElementById('hit-count').value, 10);
-// 		//will return if variable has value of NaN
-// 		linkValue = isNaN(value) ? 0 : value;
-// 		//if not Nan, then value will increment by 1
-// 		value++;
-		
-//     //document.getElementById('number').value = value;
-// }
+//user signs out of app
+//on click function
+firebase.auth().signOut().then(function() {
+  // Sign-out successful.
+}).catch(function(error) {
+  // An error happened.
+});
+
+}) //closing brackets for sign up pages html
+
+//create url btn will have an onclick function--to create urls 
+
+
+
+
+
 
 //option 3
 	// $('.create-hit-url').on("click", function(){

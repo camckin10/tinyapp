@@ -9,6 +9,8 @@
 	<!--bootstrap stylesheet-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="./styles/signin.css">
+		<script>./js/signin.js
+		</script>
 	<title>Sign In page</title>
 </head>
 <body>
@@ -24,10 +26,16 @@
   			Password<br>
   			<input type="text" placeholder="*****" name="password" id="password" required>
 
-					<button type ="Sign Up">Sign In</button>
-					<p><a class = "link" href="https://www.google.com" target="_blank">Sign Up</a></p>
+					<button type ="Sign Up" id ="sign-btn">Sign In</button>
+					<p><a class = "link" href="https://www.google.com" target="_blank" id="sign-btn">Sign Up</a></p>
 			</form>
     </div>
   </section>
+
+	<!--firebase links-->
+	<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+  <!--firebase components links-->
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
 </body>
 </html>

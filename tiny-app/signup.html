@@ -8,6 +8,9 @@
 	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	 <!--personal stylesheet-->
 		<link rel="stylesheet" type="text/css" href="./styles/signup.css">
+
+			<script>./js/signup.js
+		</script>
 	<title>Sign Up Page</title>
 </head>
 <body>
@@ -23,10 +26,17 @@
 				Confirm Password<br>
   			<input type="text" placeholder="******" name="password" id="password" required>
 
-					<button type ="Sign Up">Sign Up</button>
-					<p><a class = "link" href="https://www.google.com" target="_blank">Sign In</a></p>
+					<button type ="Sign Up" href="./tiny-app/acct.html" id="sign-btn">Sign Up</button>
+					<!--<a class = "link" href="./tiny-app/acct.html" target="_blank">-->
+					<p><a class = "link" href="./tiny-app/signin.html" target="_blank" id="sign-btn">Sign In</a></p>
 			</form>
     </div>
   </section>
 </body>
+
+<!--firebase links-->
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+  <!--firebase components links-->
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
 </html>
