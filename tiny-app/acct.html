@@ -24,7 +24,10 @@
               <input class="form-control" id="ex3" type="text">
             </div>
 						<br>
-					<button class="create-hit-url">Create URL</button>
+					<button class="create-hit-url" onclick="">Create URL</button>
+
+          <input type="text" id="number" value="0"/>
+   <input type="button" onclick="incrementValue()" value="Increment Value" />
 				</section>
 		</div>
 	</div>
@@ -44,83 +47,31 @@
           <tr>
             <td>odnkJ Ij ijwfiwjbfiwbfi</td>
             <td>thg;</td>
-            <td>3</td>
+            <td id="hit-count">3</td>
           </tr>
           <tr>
             <td>slhv lwh wlr flw</td>
             <td>thvys</td>
-            <td>2</td>
+            <td id="hit-count"><a href=" ">2</a></td>
           </tr>
           <tr>
             <td>'askn;wkfj ;wk F;</td>
             <td>thsdby</td>
-            <td>5</td>
+            <td id="hit-count">5</td>
           </tr>
         </table>
       </section>
     </div>
 
     <br>
-		<!-- row will hold URL data table-->
-		<!--<div class="row container-fluid">
-			<section class="url-table">
-				<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Original URL</th>
-      <th>Tiny URL</th>
-      <th id="hit-count">Hit Count</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>www.google.com/puppiesandkittens</th>
-      <td>www.tiny.com/kittens</td>
-      <td>3</td>
-      
-    </tr>
-    <tr>
-      <th>www.duckduckgo.com/lifeandstuff</th>
-      <td>tiny.com/life</td>
-      <td></td>
-      
-    </tr>
-    <tr>
-      <th>https://www.pickles.com/hugs</th>
-      <td>smallpickles.com</td>
-      <td>0</td>
-			
-    </tr>
-  </tbody>
-</table>
-			</section>
-		</div>-->
-
-      
-
-    <!--trying a table method-->
-    <!--<div class="table">
-      <div class="table-row">
-        <div class="table-cell">Table cell 1</div>
-        <div class="table-cell">Table cell 2</div>
-        <div class="table-cell">Table cell 3</div>
-      </div>
-
-      <!--2nd row-->
-      <!--<div class="table-row">
-        <div class="table-cell">Table cell 1</div>
-        <div class="table-cell">Table cell 2</div>
-        <div class="table-cell">Table cell 3</div>
-      </div>
-    </div>
-
-    <!--3rd row-->
-  <!--<div class="table">
-    <div class="table-row">
-        <div class="table-cell">Table cell 1</div>
-        <div class="table-cell">Table cell 2</div>
-        <div class="table-cell">Table cell 3</div>
-      </div>
-  </div>-->
+	
 </body>
+
+<!--app js link-->
+<script>./js/script.js</script>
+<!--firebase link-->
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+  <!--firebase components links-->
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
 </html>

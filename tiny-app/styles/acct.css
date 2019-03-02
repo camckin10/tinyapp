@@ -47,12 +47,14 @@ body{
 .url-table{
 	margin:0px auto;
 	float:none;
+	border-radius:8px;
 
 }
 
 /*testing table method*/
 .round-tbl {
 	border-collapse: collapse;
+	border-radius:8px;
 	
 }
 
