@@ -47,9 +47,23 @@ body{
 .url-table{
 	margin:0px auto;
 	float:none;
+
 }
 
-.container-fluid{
+/*testing table method*/
+.round-tbl {
+	border-collapse: collapse;
+	
+}
+
+th,
+td {
+  border: 1px solid #cecfd5;
+	padding: 10px 15px;
+	border-radius:8px !important;
+}
+
+/* .container-fluid{
 	width:auto !important;
 }
 
@@ -63,16 +77,14 @@ table.table-bordered > thead > tr > th{
 
 table.table-bordered > tbody > tr > td{
 	border:1px solid #797979 !important;
-}
+} */
 
-/*testing table method*/
-.table {
-  display: table;
-}
+
+/*               
 .table-row {
   display: table-row;
 }
 .table-cell {
 	display: table-cell;
 	padding-left:101px;
-}
+} */
