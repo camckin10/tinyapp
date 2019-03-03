@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "user_object_00001": {
+        "id": "user_object_0001",
+        "username": "chelsey",
+        "email": "chelsey@example.com",
+        "password_digest": "SOMERANDOMELONGSTRING"
+      },
+      "user_object_00002": {
+        "id": "user_object_00002",
+        "username": "tamouse",
+        "email": "tamara@example.com",
+        "password_digest": "ANOTHERLONGSTRING"
+      }
+    }
+  ],
+  "urls": [
+    {
+      "url_object_00001": {
+        "id": "url_object_00001",
+        "url": "https://google.com/this.is.a.long.url.i.want.shortend",
+        "hash": "abc",
+        "user_id": "user_object_00001"
+      }
+    }
+  ]
+}
