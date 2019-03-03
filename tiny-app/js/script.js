@@ -2,8 +2,6 @@
 //https://stackoverflow.com/questions/47115748/append-a-row-to-a-table-and-increment-a-value-with-javascript
 
 
-
-
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyBI7ldhUIltYYlG2yUYQIabAkQGWCxzCwE",
@@ -19,85 +17,73 @@
 	//read + write data from database 
 	var database = firebase.database();
 
-//onclick function for both sign in pages
-//user signs up, user can sign in, user can sign out
-$('sign-btn').on("click", function(){
-	//user signs up
-//onclick function for this action?
+	//onclick function for sign up page
 
-firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-	var errorMessage = error.message;
-	if (errorCode == 'auth/invalid-email'){
-		alert('The email is incorrect')
-	} else {
-		alert(errorMessage)
-	}
-		console.log(error);
-});
-
-//user signs in app 
-//onclick function for this action?
-firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  // ...
-});
-
-//user signs out of app
-//on click function
-firebase.auth().signOut().then(function() {
-  // Sign-out successful.
-}).catch(function(error) {
-  // An error happened.
-});
-
-}) //closing brackets for sign up pages html
-
-//create url btn will have an onclick function--to create urls 
-
-
-
-
-
-
-//option 3
-	// $('.create-hit-url').on("click", function(){
-
-	// 	//use event.preventDefault to stop form?
-	// 	//possibly would cause hit count to not increment
-
-	// 		//grab value from URL input
-	// 		var formInput = $('.form-input').val().trim();
-
-
-
-	// 		//code for handling push
-	// 		database.ref().push({
-	// 		formInput: formInput,
+	var emailAdd = document.getElementById('email');
+	var password = document.getElementById('password');
 	
-	// 	})
-	// 		//checking in console for information
-	// 		console.log(formInput);
+		//submit button
+		var signUpBtn = document.getElementById('sign-up-btn');
 
 
-	// 	//Firebase watcher + initial loader 
-  //   //code that works the same as .on("value")
-  //   database.ref().on("child_added", function(childSnapshot) {
-	// 		//console log everything from childSnapshot to double check
-			
-//variable should hold html value
-//var tiny-url = document.getElementById('tiny-url).value;
-	// 		//Change HTML to reflect information
-	// 		$(".round-tbl").append('<tr><td>' + variable + '</td><td>' + variable + '</td><td>' + variable + '</td><td>' + variable + '</td></tr>');
+	signUpBtn.addEventListener('click', function(){
 
-	//$(".round-tbl").append('<tr><td>' + tiny-url )
+		//grab values from input
+		emailAdd = document.getElementById('email').value;
+		password = document.getElementById('password').value;
 
-	// 		//syntax--id.text(childsnapshot) value. variable name 
-	// 		$("#id-name").text(childSnapshot.val().variable);
-	// 	})
+	//push data to database
+	database.ref().push({
+		email:email,
+		password:password
+	})
+
+		//create new acct
+		firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+			// Handle Errors here.
+			var errorCode = 'auth/invalid-action-code';
+			if (errorCode == 'auth/invalid-action-code'){
+				return("Your password is incorrect");
+			} else {
+				 return("Welcome Back");
+			}
 		
-	// });
+		});
 
+	//add user to database
+	function newUserData(email,password){
+		firebase.database().ref().set({
+			email:email,
+			password:password
+		})
+	}
+
+	})
+
+	//console log the variables to test
+	console.log(email);
+	console.log(password);
+
+	var signIn = document.getElementById('sign-in-btn');
+
+	//onclick function for sign in
+	signIn.addEventListener('click', function(){
+
+		firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+			// Handle Errors here.
+			var errorCode = 'auth/invalid-email';
+			if (errorCode == 'auth/invalid-email'){
+				console.log('Incorrect email. Please try again');
+			} else if (error == 'auth/invalid-password') {
+					console.log('Incorrect password. Please try again');
+			} else {
+				console.log("Good to go!");
+			}
+		
+		});
+	})
+
+	//user acct/profile
+	
+
+	

@@ -9,8 +9,7 @@
 	 <!--personal stylesheet-->
 		<link rel="stylesheet" type="text/css" href="./styles/signup.css">
 
-			<script>./js/signup.js
-		</script>
+		
 	<title>Sign Up Page</title>
 </head>
 <body>
@@ -26,7 +25,9 @@
 				Confirm Password<br>
   			<input type="text" placeholder="******" name="password" id="password" required>
 
-					<button type ="submit" id="sign-btn"><a class = "link" href="../tiny-app/acct.html" target="_blank">Sign Up</button></a>
+				
+					<a class="link" href="../tiny-app/acct.html" target="_blank"></a><button type="submit" id="sign-up-btn">Sign Up</button>
+					
 					<!--<a class = "link" href="./tiny-app/acct.html" target="_blank">-->
 					<p><a class="link" href="../tiny-app/signin.html" target="_blank" id="sign-btn">Sign In</a></p>
 			</form>
@@ -34,9 +35,16 @@
   </section>
 </body>
 
-<!--firebase links-->
-<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+
+
+<!--firebase link-->
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+  <!--firebase app-->
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
   <!--firebase components links-->
   <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
+
+  <!--custom js link-->
+<script type="text/javascript" src="./js/script.js"/>
 </html>
