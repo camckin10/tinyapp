@@ -33,7 +33,11 @@ body{
 	border:1px solid #797979;
 }
 
-.create-hit-url{
+.hidden{
+	display:none;
+}
+
+#create-hit-url{
 	margin-left:10px;
 	padding-top:5px;
 	height:55px;

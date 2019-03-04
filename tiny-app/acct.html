@@ -27,7 +27,7 @@
               <input class="form-control" id="form-input" type="text">
             </div>
 						<br>
-					<button class="create-hit-url" onclick="">Create URL</button>
+					<button  id="create-hit-url" onclick="">Create URL</button>
 
 				</section>
 		</div>
@@ -37,7 +37,7 @@
 
     <div class="row">
       <section class="url-table">
-        <table class="round-tbl">
+        <table id="table" class="hidden">
           <thead>
             <tr>
               <th>Long URL</th>
@@ -46,19 +46,19 @@
             </tr>
           </thead>
           <tr>
-            <td><a href="https://www.theroot.com">Long Url here</a></td>
-            <td><a href="https://www.theroot.com">Tiny Url here</a></td>
-            <td>3</td>
+            <td><a  class=" longurl"href="https://www.theroot.com"></a></td>
+            <td><a class="shorturl"href="https://www.theroot.com"></a></td>
+            <td></td>
           </tr>
           <tr>
-            <td><a href="https://www.theroot.com">Long Url here</a></td>
-            <td><a href="https://www.theroot.com">Tiny Url here</a></td>
-            <td>2</td>
+            <td><a class="longurl" href="https://www.theroot.com"></a></td>
+            <td><a class="shorturl" href="https://www.theroot.com"></a></td>
+            <td></td>
           </tr>
           <tr>
-            <td><a href="https://www.theroot.com">Long Url here</a></td>
-            <td><a href="https://www.theroot.com">Tiny Url here</a></td>
-            <td>5</td>
+            <td><a class="longurl" href="https://www.theroot.com"></a></td>
+            <td><a class="shorturl" href="https://www.theroot.com"></a></td>
+            <td></td>
           </tr>
         </table>
       </section>
@@ -78,7 +78,8 @@
 
 
 <!--jquery link-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 
   <!--custom js link-->
 <script type="text/javascript" src="./js/script.js"></script>

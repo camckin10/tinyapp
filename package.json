@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "jsrv":"json-server --watch db.json"
+    "jsrv": "json-server --watch db.json",
+    "whatsmypath": "echo $PATH"
   },
   "repository": {
     "type": "git",
