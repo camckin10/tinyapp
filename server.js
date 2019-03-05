@@ -1,3 +1,5 @@
+
+
 const express = require("express");
 //const mongoose = require("mongoose");
 //const bodyParser = require("body-parser");
@@ -7,12 +9,15 @@ const jsonServer = require('json-server')
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
- 
+
+server.use(express.static('tiny-app'))
+
 server.use(middlewares)
 server.use(router)
 server.listen(3000, () => {
   console.log('JSON Server is running')
 })
+
 
 // // Bodyparser middleware
 // app.use(
