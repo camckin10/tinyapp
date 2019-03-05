@@ -6,19 +6,22 @@ Open your terminal, and cd into the directory and/or folder you would like to st
 <br/>
 Once in proper directory, type the command below to clone the project repo
 ```` 
-'git clone' git@github.com:camckin10/tinyapp.git 
+git clone git@github.com:camckin10/tinyapp.git 
 ```` 
 <br/>
 After repo is cloned to your machine, type in the command 
 ````
 npm install
 ````
- Npm install will install any packages the project depends on while running. 
 <br/>
-To start the server for the project, type the following command into your terminal.
+Npm install will install any packages the project depends on while running. 
+<br/>
+To start the server for the project, type the following command into your terminal
+<br/>
 ````
 npm start 
 ````
+<br/>
 Happy Hacking! 
 
 ## Built With 
