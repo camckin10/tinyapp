@@ -10,6 +10,7 @@ git clone git@github.com:camckin10/tinyapp.git
 ``` 
 <br/>
 After repo is cloned to your machine, type in the command 
+<br/>
 ```
 npm install
 ```
