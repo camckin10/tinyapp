@@ -3,9 +3,6 @@ body{
 	padding-top:56px;
 } 
 
-
-
-
 /*1st row of code*/
 .first-title{
 	float:left;
@@ -41,10 +38,6 @@ a:hover{
 	border:1px solid #797979;
 }
 
-/* .hidden{
-	display:none;
-} */
-
 #create-hit-url{
 	margin-left:10px;
 	padding-top:5px;
@@ -58,51 +51,82 @@ a:hover{
 
 /*3rd row of code*/
 /*table with URLS*/ 
-.url-table{
+table {
+	border-collapse: collapse;
+	margin: 30px auto;
+	width: 75%;
+	/* border: 3px solid papayawhip; */
+	background:  #F5F5F5;
+	border-radius: 10px; /* this seems to be the magic after all */
+	/* min-width: 60%; */
+	/* margin: 10px auto; */
+	/* border: 2px solid pink; */
+	/* border-radius: 15px; */
+}
+.url-table {
+	margin: 0 auto;
+	width: 75%;
+	border: 1px solid darkblue;
+	background:  #F5F5F5;
+	/* min-width: 60%; */
+	/* margin: 10px auto; */
+	/* border: 2px solid pink; */
+	/* border-radius: 15px; */
+}
+.url-table__header {
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px solid darkblue;
+	border-top-left-radius: 10px; /* this seems to be the magic after all */
+	border-top-right-radius: 10px;
+}
+.url-table > div {
+	border-right: 1px solid darkblue;
+}
+.url-table > div:last-child {
+	border-right: none;
+}
+.url-table__body-row {
+	border-bottom: 1px solid darkblue;
+}
+.url-table__body-row:last-child {
+	border-bottom: 1px solid darkblue ;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+/* .url-table{
 	margin:0px auto;
 	float:none;
 	border-radius:30px;
 	min-width: 60%;
 	border:5px solid pink;
 
-}
+} */
 
-/*testing table method*/
-.round-tbl {
-	border-collapse: collapse;
-	border-radius:8px;
-	
-}
-
-thead th,
+/* thead th,
 tbody td {
   border-bottom: 1px solid #cecfd5;
 	padding: 10px 15px;
 	border-radius:30px !important;
-}
-
-/* .container-fluid{
-	width:auto !important;
-}
-
-table.table-bordered > thead > tr > th{
-  border:1px solid #797979 !important;
-}
-
-.table-bordered th{
-	border:1px solid #797979;
-}
-
-table.table-bordered > tbody > tr > td{
-	border:1px solid #797979 !important;
 } */
 
-
-/*               
-.table-row {
-  display: table-row;
+/*table only using divs*/
+.new-table{
+	margin:1px auto;
+	float:none;
 }
-.table-cell {
-	display: table-cell;
-	padding-left:101px;
-} */
+
+h5, a{
+	color:darkblue
+}
+
+a:hover{
+	color:darkblue;
+}
+
+.long-url,.short-url,.hit-count{
+	color:darkblue;
+}
+
