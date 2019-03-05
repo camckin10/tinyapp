@@ -65,8 +65,9 @@ table {
 }
 .url-table {
 	margin: 0 auto;
-	width: 75%;
-	border: 1px solid darkblue;
+	width: 91%;
+	color:darkblue;
+	border: 1px solid black;
 	background:  #F5F5F5;
 	/* min-width: 60%; */
 	/* margin: 10px auto; */
@@ -74,59 +75,24 @@ table {
 	/* border-radius: 15px; */
 }
 .url-table__header {
-	font-weight: bold;
+	/*font-weight: bold;*/
 	text-align: center;
-	border-bottom: 1px solid darkblue;
-	border-top-left-radius: 10px; /* this seems to be the magic after all */
-	border-top-right-radius: 10px;
+	border-bottom: 1px black;
+	border-top-left-radius: 6px; /* this seems to be the magic after all */
+	border-top-right-radius: 6px;
 }
 .url-table > div {
-	border-right: 1px solid darkblue;
+	border-right: 1px solid black;
 }
 .url-table > div:last-child {
 	border-right: none;
 }
 .url-table__body-row {
-	border-bottom: 1px solid darkblue;
+	border-bottom: 1px black;
 }
 .url-table__body-row:last-child {
-	border-bottom: 1px solid darkblue ;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-}
-
-
-/* .url-table{
-	margin:0px auto;
-	float:none;
-	border-radius:30px;
-	min-width: 60%;
-	border:5px solid pink;
-
-} */
-
-/* thead th,
-tbody td {
-  border-bottom: 1px solid #cecfd5;
-	padding: 10px 15px;
-	border-radius:30px !important;
-} */
-
-/*table only using divs*/
-.new-table{
-	margin:1px auto;
-	float:none;
-}
-
-h5, a{
-	color:darkblue
-}
-
-a:hover{
-	color:darkblue;
-}
-
-.long-url,.short-url,.hit-count{
-	color:darkblue;
+	border-bottom: 1px solid black ;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
 }
 
