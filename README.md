@@ -4,11 +4,22 @@
 ## Getting Started
 Open your terminal, and cd into the directory and/or folder you would like to store the project repo. 
 <br/>
-Once in proper directory, type the command 'git clone' git@github.com:camckin10/tinyapp.git to clone the project repo. 
+Once in proper directory, type the command below to clone the project repo
+```` 
+'git clone' git@github.com:camckin10/tinyapp.git 
+```` 
 <br/>
-After repo is cloned, type in the command 'npm install.' Npm install will install any packages the project depends on while running. 
+After repo is cloned to your machine, type in the command 
+````
+npm install
+````
+ Npm install will install any packages the project depends on while running. 
 <br/>
-To start the server for the project, type command 'npm start' into your terminal. 
+To start the server for the project, type the following command into your terminal.
+````
+npm start 
+````
+Happy Hacking! 
 
 ## Built With 
 HTML5/CSS3 
