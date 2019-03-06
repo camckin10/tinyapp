@@ -1,7 +1,7 @@
 {
   "name": "tinyapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Created web app modeling [Tiny URL](http://tinyurl.com/), and [Foundry mockup](https://foundrymakes.invisionapp.com/share/M8Q1KJYUQYR#/screens/341626732)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -13,8 +13,8 @@
     "type": "git",
     "url": "git+https://github.com/camckin10/tinyapp.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "chelsey-mckinney",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/camckin10/tinyapp/issues"
   },
@@ -26,7 +26,7 @@
     "express": "^4.16.4",
     "is-empty": "^1.2.0",
     "jsonwebtoken": "^8.5.0",
-    "mongoose": "^5.4.16",
+    "mongoose": "^5.4.17",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "validator": "^10.11.0"
@@ -34,5 +34,9 @@
   "devDependencies": {
     "json-server": "^0.14.2",
     "nodemon": "^1.18.10"
-  }
+  },
+  "keywords": [
+    "tiny",
+    "app"
+  ]
 }
