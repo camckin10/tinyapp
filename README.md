@@ -7,9 +7,10 @@
  <br/>
 
  ## Images of App:
- ![Sign In Page](https://drive.google.com/file/d/1A20h3F6FNKxFdcaEg0RIBxxQ8kn34rGY/view?usp=sharing)
+ ![Sign In Page](https://drive.google.com/uc?export=view&id=1A20h3F6FNKxFdcaEg0RIBxxQ8kn34rGY)
+ 
  <br/>
- ![Sign Up Page](../tiny-pictures/final/signup.png)
+ ![Sign Up Page](https://drive.google.com/uc?export=view&id=)
  <br/>
  ![User acct](/Users/chelseymckinney/Documents/tinyapp/tinyapp/tiny-pictures/final/user.png)
 
