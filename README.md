@@ -7,7 +7,7 @@
  <br/>
 
  ## Images of App:
- ![Sign In Page](/Users/chelseymckinney/Documents/tinyapp/tinyapp/tiny-pictures/final/signin.png)
+ ![Sign In Page](signin.png)
  <br/>
  ![Sign Up Page](/Users/chelseymckinney/Documents/tinyapp/tinyapp/tiny-pictures/final/signup.png)
  <br/>
