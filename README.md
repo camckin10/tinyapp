@@ -1,5 +1,17 @@
 # Tiny URL Coding Challenge 
  Created web app modeling [Tiny URL](http://tinyurl.com/), and [Foundry mockup](https://foundrymakes.invisionapp.com/share/M8Q1KJYUQYR#/screens/341626732)
+ <br/>
+
+ App Deployment can be viewed here: [tiny-challenge](https://tiny-challenge.herokuapp.com/)
+ *
+ <br/>
+
+ ## Images of App:
+ ![Sign In Page](https://drive.google.com/uc?export=view&id=1rJyo12iCAkp7viEQ20KHCXh1ASB4FkE7)
+ ![Sign Up Page](https://drive.google.com/uc?export=view&id=13YvOR5fV8Ll3MgjNU8Bd8aP9jXTg80Hv)
+
+ ![User acct](https://drive.google.com/uc?export=viewid=1QLrLEkhA9f3RaYhY6FgBNmzb5asMUBHM)
+ 
 
 ## Getting Started
 Open your terminal, and cd into the directory and/or folder you would like to store the project repo. 

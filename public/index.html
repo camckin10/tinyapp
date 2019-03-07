@@ -24,15 +24,17 @@
 				  <section class="url-box">
             <div class="col-11">
               <label for="ex3"></label>
-              <input class="form-control" id="form-input" type="text">
+              <input class="form-control" id="form-input" type="text" id="urlnameinput">
             </div>
 						<br>
-					<button id="create-hit-url" onclick="">Create URL</button>
+					<button id="create-hit-url">Create URL</button>
 				</section>
 		</div>
 	</div>
-
+<!--keep all code from this line and up-->
 		<br>
+
+  
 
       <div class="row">
         <div class="col-lg-12">
@@ -42,12 +44,13 @@
             <div class="col-4">Short Url</div>
             <div class="col-1" style="white-space: nowrap">Hit Count</div>
           </div>
+
           <div class="row url-table url-table__body-row">
-            <div class="col-5"><a href="https://wwww.google.com">https://wwww.google.com</a></div>
-            <div class="col-4"><a href="http://tiny.com/abc">http://tiny.com/abc</a></div>
+            <div class="col-5" id="long-url"><a href="https://wwww.google.com"></a></div>
+            <div class="col-4" id="short-url"><a href="http://tiny.com/abc"></a></div>
             <div class="col-1">1</div>
           </div>
-          <div class="row url-table url-table__body-row">
+         <div class="row url-table url-table__body-row">
             <div class="col-5"><a href="https://wwww.google.com">https://wwww.google.com</a></div>
             <div class="col-4"><a href="http://tiny.com/abc">http://tiny.com/abc</a></div>
             <div class="col-1">3</div>
@@ -71,18 +74,29 @@
       </div>
 
     <br>
-	
+    	
 </body>
 
+<!--Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
+
+<!--Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
 
 
 
 <!--jquery link-->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
+<!--other js file to test-->
+<script src="../test/script.js"></script>
+<!--/Users/chelseymckinney/Documents/tinyapp/tinyapp/test/script.js
+../test/script.js-->
 
   <!--custom js link-->
-<script type="text/javascript" src="./js/script.js"></script>
+<!--<script type="text/javascript" src="./js/script.js"></script>-->
 
 
 </html>
