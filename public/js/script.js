@@ -26,7 +26,7 @@ $("#create-hit-url").on("click", function() {
 	//grabbed values from text boxes
 	//train name input variable
 	var longurl = $("#urlnameinput").one().val() || ' ' ;
-	var shorturl = 'http://tinyurl.com/api-create.php?url=' + longurl.val();
+	var shorturl = 'http://tinyurl.com/api-create.php?url=' + longurl;
 
 
 	//moment.js
