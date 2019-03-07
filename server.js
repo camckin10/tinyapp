@@ -1,20 +1,29 @@
-
-
+const path = require('path');
 const express = require("express");
+const serveStatic = require('serve-static');
+
 //const mongoose = require("mongoose");
 //const bodyParser = require("body-parser");
 //const app = express();
+//const path = 'path';
 
 const jsonServer = require('json-server')
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
-server.use(express.static('tiny-app'))
+
+//server.use('/public', express.static(__dirname + '/public'));
+//server.use(serveStatic('public'));
+//server.use('/tinyapp', express.static('public'))
+//server.use('/tinyapp', express.static(path.join(__dirname, 'tinyapp')))
+//server.use(express.static('tinyapp'))
+//server.use('public', path.join(__dirname, 'public'));
+//server.use(express.static(__dirname + 'tinyapp'));
 
 server.use(middlewares)
 server.use(router)
-server.listen(5000, () => {
+server.listen(process.env.PORT || 5000, () => {
   console.log('JSON Server is running')
 })
 
