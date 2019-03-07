@@ -25,38 +25,28 @@ $("#create-hit-url").on("click", function() {
 
 	//grabbed values from text boxes
 	//train name input variable
-	var longurl = $("#urlnameinput").val() || ' ';
-	//destination input variable
-	//var destination = $("#destination-input").val().trim();
-	//first train time input variable 
-	//var trainTime = $("#traintime-input").val().trim();
-	//frequency(minutes) input variable
-	//var minutes = $("#frequency-input").val().trim();
+	var longurl = $("#urlnameinput").one().val() || ' ' ;
+	var shorturl = 'http://tinyurl.com/api-create.php?url=' + longurl.val();
+
 
 	//moment.js
 	//putting time values in an object that gets pushed to databse
-	var newData = {
-			longurl: longurl,
-			//destination: destination,
-			//trainTime: trainTime,
-			//minutes: minutes
-	}
+	//  var newData = {
+	// 			longurl:longurl,
+	// 			shorturl:shorturl
+	// 
+	//  }
 
 
 	//code for handling the push
 	//BUT this also gets pushed to database! what is going on???
 	database.ref().push({
 					longurl: longurl,
-					//destination: destination,
-					//trainTime: trainTime,
-					//minutes: minutes
-
+					shorturl:shorturl
 			})
 			//checking in console for information
-	console.log(longurl);
-	//console.log(destination);
-	//console.log(trainTime);
-	//console.log(minutes);
+	//console.log(longurl);
+
 
 
 	//Firebase watcher + initial loader 
@@ -64,22 +54,18 @@ $("#create-hit-url").on("click", function() {
 	database.ref().on("child_added", function(childSnapshot) {
 			//console log everything from childSnapshot to double check
 			var longurl = childSnapshot.val().longurl;
-			//var destination = childSnapshot.val().destination;
-			//var trainTime = childSnapshot.val().trainTime;
-			//var minutes = childSnapshot.val().minutes;
-
+			var shorturl = childSnapshot.val().shorturl;
+			
 
 
 			//Change HTML to reflect information
-			$("#url-table").append('<a href=>' + longurl + '</a>');
-			//+ shorturl + '</td><td>' + hitcount  + '</td><td>' + '</td></tr>');
+			//$("#long-url").append('<a href=>' + longurl  + 'originalurl'+ '</a>');
+			$('#long-url').append(longurl);
+			$('#short-url').append('<a href=>' +  shorturl + '</a>');
 			
 
-			$("#urlnameinput").text(childSnapshot.val().longurl);
-			//$("#destination-input").text(childSnapshot.val().destination);
-			//$("#traintime-input").text(childSnapshot.val().trainTime);
-			//$("#frequency-input").text(childSnapshot.val().minutes);
-
+			//$("#urlnameinput").text(childSnapshot.val().longurl);
+			
 
 	});
 
@@ -87,4 +73,3 @@ $("#create-hit-url").on("click", function() {
 
 
 });
-
