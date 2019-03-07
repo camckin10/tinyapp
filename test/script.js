@@ -17,8 +17,6 @@ var database = firebase.database();
 //capture button click
 //button on click function for submit button
 $("#create-hit-url").on("click", function() {
-	//define var short url
-	//var shorturl = " ";
 	//event.preventDefault() will stop page refreshing
 	event.preventDefault();
 
@@ -26,8 +24,7 @@ $("#create-hit-url").on("click", function() {
 	//grabbed values from text boxes
 	//train name input variable
 	var longurl = $("#urlnameinput").one().val() || ' ' ;
-	//var shorturl = window.location.replace("http://tinyurl.com/api-create.php?url=");
-	var shorturl = 'http://tinyurl.com/api-create.php?url=' + longurl.trim();
+	var shorturl = 'http://tinyurl.com/api-create.php?url=' + longurl.val();
 
 
 	//moment.js
@@ -44,8 +41,6 @@ $("#create-hit-url").on("click", function() {
 	database.ref().push({
 					longurl: longurl,
 					shorturl:shorturl
-					
-
 			})
 			//checking in console for information
 	//console.log(longurl);
@@ -62,8 +57,9 @@ $("#create-hit-url").on("click", function() {
 
 
 			//Change HTML to reflect information
-			$("#long-url").append('<a href=>' + longurl + '</a>');
-			$('#short-url').append(shorturl);
+			//$("#long-url").append('<a href=>' + longurl  + 'originalurl'+ '</a>');
+			$('#long-url').append(longurl);
+			$('#short-url').append('<a href=>' +  shorturl + '</a>');
 			
 
 			//$("#urlnameinput").text(childSnapshot.val().longurl);
