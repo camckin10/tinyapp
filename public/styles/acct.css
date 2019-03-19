@@ -25,14 +25,28 @@ a:hover{
 }
 
 /*2nd row of code*/
-.url-box{
+/* .url-box{
 	border:1px solid #797979;
 	padding-top:15px;
 	background-color:white;
 	padding-bottom:15px;
 	margin:46px;
 	border-radius:7px;
+} */
+
+.url-box{
+	border: 1px solid #797979;
+	border-radius:7px;
+  outline-style: solid;
+  outline-color:#797979;
+	outline-width: thin;
+	padding-top:15px;
+	background-color:white;
+	padding-bottom:15px;
+	margin:46px;
 }
+
+
 
 .form-control{
 	border:1px solid #797979;
