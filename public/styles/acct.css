@@ -66,7 +66,49 @@ a:hover{
 
 /*3rd row of code*/
 /*table with URLS*/ 
-table, td, th {
+table {
+  width: 90%;
+  margin: 20px auto;
+	table-layout: auto;
+	border:solid black 1px;
+  border-radius:6px;
+  -moz-border-radius:6px;
+}
+
+.fixed {
+  table-layout: fixed;
+}
+
+table,
+td,
+th {
+	border-collapse: collapse;
+	border-top: none;
+}
+
+th,
+td {
+  padding: 10px;
+  border: solid 1px;
+	text-align: center;
+	border-left:solid black 1px;
+  border-top:solid black 1px;
+}
+
+td:first-child, th:first-child {
+	border-left: none;
+}
+
+.w {
+  width: 686px;
+}
+
+/* .z{
+	width:50px;
+} */
+
+/*2nd option for tables*/
+/* table, td, th {
 	border: 1px solid black;
 	text-align: center;
 	border-collapse: collapse;
@@ -87,14 +129,14 @@ table tr:last-child td:last-child {
 	border-bottom-right-radius: 10px;
 } */
 
-th {
+/*th {
   height: 50px;
 }
 
 td {
 	  height:40px;
     text-align:center;
-}
+} */
 
 
 
